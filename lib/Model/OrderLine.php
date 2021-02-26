@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * OrderLine Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,8 +70,8 @@ class OrderLine implements ModelInterface, ArrayAccess
         'merchant_data' => 'string',
         'product_url' => 'string',
         'image_url' => 'string',
-        'product_identifiers' => '\Swagger\Client\Model\ProductIdentifiers',
-        'shipping_attributes' => '\Swagger\Client\Model\ShippingAttributes'
+        'product_identifiers' => '\Swagger\KCClient\Model\ProductIdentifiers',
+        'shipping_attributes' => '\Swagger\KCClient\Model\ShippingAttributes'
     ];
 
     /**
@@ -741,7 +741,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets product_identifiers
      *
-     * @return \Swagger\Client\Model\ProductIdentifiers
+     * @return \Swagger\KCClient\Model\ProductIdentifiers
      */
     public function getProductIdentifiers()
     {
@@ -751,7 +751,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets product_identifiers
      *
-     * @param \Swagger\Client\Model\ProductIdentifiers $product_identifiers product_identifiers
+     * @param \Swagger\KCClient\Model\ProductIdentifiers $product_identifiers product_identifiers
      *
      * @return $this
      */
@@ -765,7 +765,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_attributes
      *
-     * @return \Swagger\Client\Model\ShippingAttributes
+     * @return \Swagger\KCClient\Model\ShippingAttributes
      */
     public function getShippingAttributes()
     {
@@ -775,7 +775,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_attributes
      *
-     * @param \Swagger\Client\Model\ShippingAttributes $shipping_attributes shipping_attributes
+     * @param \Swagger\KCClient\Model\ShippingAttributes $shipping_attributes shipping_attributes
      *
      * @return $this
      */

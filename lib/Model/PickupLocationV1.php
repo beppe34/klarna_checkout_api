@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * PickupLocationV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PickupLocationV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'string',
         'name' => 'string',
-        'address' => '\Swagger\Client\Model\Address'
+        'address' => '\Swagger\KCClient\Model\Address'
     ];
 
     /**
@@ -267,7 +267,7 @@ class PickupLocationV1 implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Swagger\KCClient\Model\Address
      */
     public function getAddress()
     {
@@ -277,7 +277,7 @@ class PickupLocationV1 implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \Swagger\KCClient\Model\Address $address address
      *
      * @return $this
      */

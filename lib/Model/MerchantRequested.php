@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * MerchantRequested Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class MerchantRequested implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'additional_checkbox' => 'bool',
-        'additional_checkboxes' => '\Swagger\Client\Model\MerchantRequestedCheckbox[]'
+        'additional_checkboxes' => '\Swagger\KCClient\Model\MerchantRequestedCheckbox[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class MerchantRequested implements ModelInterface, ArrayAccess
     /**
      * Gets additional_checkboxes
      *
-     * @return \Swagger\Client\Model\MerchantRequestedCheckbox[]
+     * @return \Swagger\KCClient\Model\MerchantRequestedCheckbox[]
      */
     public function getAdditionalCheckboxes()
     {
@@ -247,7 +247,7 @@ class MerchantRequested implements ModelInterface, ArrayAccess
     /**
      * Sets additional_checkboxes
      *
-     * @param \Swagger\Client\Model\MerchantRequestedCheckbox[] $additional_checkboxes Informs whether the additional_checkboxes is checked or not, when applicable.
+     * @param \Swagger\KCClient\Model\MerchantRequestedCheckbox[] $additional_checkboxes Informs whether the additional_checkboxes is checked or not, when applicable.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * DeliveryDetailsV1 Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'carrier' => 'string',
         'class' => 'string',
-        'product' => '\Swagger\Client\Model\ProductV1',
-        'timeslot' => '\Swagger\Client\Model\TimeslotV1',
-        'pickup_location' => '\Swagger\Client\Model\PickupLocationV1'
+        'product' => '\Swagger\KCClient\Model\ProductV1',
+        'timeslot' => '\Swagger\KCClient\Model\TimeslotV1',
+        'pickup_location' => '\Swagger\KCClient\Model\PickupLocationV1'
     ];
 
     /**
@@ -279,7 +279,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets product
      *
-     * @return \Swagger\Client\Model\ProductV1
+     * @return \Swagger\KCClient\Model\ProductV1
      */
     public function getProduct()
     {
@@ -289,7 +289,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets product
      *
-     * @param \Swagger\Client\Model\ProductV1 $product product
+     * @param \Swagger\KCClient\Model\ProductV1 $product product
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets timeslot
      *
-     * @return \Swagger\Client\Model\TimeslotV1
+     * @return \Swagger\KCClient\Model\TimeslotV1
      */
     public function getTimeslot()
     {
@@ -313,7 +313,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets timeslot
      *
-     * @param \Swagger\Client\Model\TimeslotV1 $timeslot timeslot
+     * @param \Swagger\KCClient\Model\TimeslotV1 $timeslot timeslot
      *
      * @return $this
      */
@@ -327,7 +327,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets pickup_location
      *
-     * @return \Swagger\Client\Model\PickupLocationV1
+     * @return \Swagger\KCClient\Model\PickupLocationV1
      */
     public function getPickupLocation()
     {
@@ -337,7 +337,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets pickup_location
      *
-     * @param \Swagger\Client\Model\PickupLocationV1 $pickup_location pickup_location
+     * @param \Swagger\KCClient\Model\PickupLocationV1 $pickup_location pickup_location
      *
      * @return $this
      */

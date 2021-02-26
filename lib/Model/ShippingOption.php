@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * ShippingOption Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class ShippingOption implements ModelInterface, ArrayAccess
         'tax_amount' => 'int',
         'tax_rate' => 'int',
         'shipping_method' => 'string',
-        'delivery_details' => '\Swagger\Client\Model\DeliveryDetailsV1',
+        'delivery_details' => '\Swagger\KCClient\Model\DeliveryDetailsV1',
         'tms_reference' => 'string'
     ];
 
@@ -513,7 +513,7 @@ class ShippingOption implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_details
      *
-     * @return \Swagger\Client\Model\DeliveryDetailsV1
+     * @return \Swagger\KCClient\Model\DeliveryDetailsV1
      */
     public function getDeliveryDetails()
     {
@@ -523,7 +523,7 @@ class ShippingOption implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_details
      *
-     * @param \Swagger\Client\Model\DeliveryDetailsV1 $delivery_details delivery_details
+     * @param \Swagger\KCClient\Model\DeliveryDetailsV1 $delivery_details delivery_details
      *
      * @return $this
      */

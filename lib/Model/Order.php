@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,34 +60,34 @@ class Order implements ModelInterface, ArrayAccess
         'name' => 'string',
         'status' => 'string',
         'locale' => 'string',
-        'customer' => '\Swagger\Client\Model\Customer',
-        'options' => '\Swagger\Client\Model\Options',
-        'attachment' => '\Swagger\Client\Model\Attachment',
-        'gui' => '\Swagger\Client\Model\Gui',
+        'customer' => '\Swagger\KCClient\Model\Customer',
+        'options' => '\Swagger\KCClient\Model\Options',
+        'attachment' => '\Swagger\KCClient\Model\Attachment',
+        'gui' => '\Swagger\KCClient\Model\Gui',
         'recurring' => 'bool',
         'tags' => 'string[]',
         'order_id' => 'string',
         'purchase_country' => 'string',
         'purchase_currency' => 'string',
-        'billing_address' => '\Swagger\Client\Model\Address',
-        'shipping_address' => '\Swagger\Client\Model\Address',
+        'billing_address' => '\Swagger\KCClient\Model\Address',
+        'shipping_address' => '\Swagger\KCClient\Model\Address',
         'order_amount' => 'int',
         'order_tax_amount' => 'int',
-        'order_lines' => '\Swagger\Client\Model\OrderLine[]',
-        'merchant_urls' => '\Swagger\Client\Model\MerchantUrls',
+        'order_lines' => '\Swagger\KCClient\Model\OrderLine[]',
+        'merchant_urls' => '\Swagger\KCClient\Model\MerchantUrls',
         'html_snippet' => 'string',
         'merchant_reference1' => 'string',
         'merchant_reference2' => 'string',
         'started_at' => '\DateTime',
         'completed_at' => '\DateTime',
         'last_modified_at' => '\DateTime',
-        'external_payment_methods' => '\Swagger\Client\Model\PaymentProvider[]',
-        'external_checkouts' => '\Swagger\Client\Model\PaymentProvider[]',
+        'external_payment_methods' => '\Swagger\KCClient\Model\PaymentProvider[]',
+        'external_checkouts' => '\Swagger\KCClient\Model\PaymentProvider[]',
         'shipping_countries' => 'string[]',
-        'shipping_options' => '\Swagger\Client\Model\ShippingOption[]',
+        'shipping_options' => '\Swagger\KCClient\Model\ShippingOption[]',
         'merchant_data' => 'string',
-        'merchant_requested' => '\Swagger\Client\Model\MerchantRequested',
-        'selected_shipping_option' => '\Swagger\Client\Model\ShippingOption',
+        'merchant_requested' => '\Swagger\KCClient\Model\MerchantRequested',
+        'selected_shipping_option' => '\Swagger\KCClient\Model\ShippingOption',
         'recurring_token' => 'string',
         'recurring_description' => 'string',
         'billing_countries' => 'string[]'
@@ -552,7 +552,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \Swagger\Client\Model\Customer
+     * @return \Swagger\KCClient\Model\Customer
      */
     public function getCustomer()
     {
@@ -562,7 +562,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets customer
      *
-     * @param \Swagger\Client\Model\Customer $customer customer
+     * @param \Swagger\KCClient\Model\Customer $customer customer
      *
      * @return $this
      */
@@ -576,7 +576,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \Swagger\Client\Model\Options
+     * @return \Swagger\KCClient\Model\Options
      */
     public function getOptions()
     {
@@ -586,7 +586,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \Swagger\Client\Model\Options $options options
+     * @param \Swagger\KCClient\Model\Options $options options
      *
      * @return $this
      */
@@ -600,7 +600,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets attachment
      *
-     * @return \Swagger\Client\Model\Attachment
+     * @return \Swagger\KCClient\Model\Attachment
      */
     public function getAttachment()
     {
@@ -610,7 +610,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets attachment
      *
-     * @param \Swagger\Client\Model\Attachment $attachment attachment
+     * @param \Swagger\KCClient\Model\Attachment $attachment attachment
      *
      * @return $this
      */
@@ -624,7 +624,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets gui
      *
-     * @return \Swagger\Client\Model\Gui
+     * @return \Swagger\KCClient\Model\Gui
      */
     public function getGui()
     {
@@ -634,7 +634,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets gui
      *
-     * @param \Swagger\Client\Model\Gui $gui gui
+     * @param \Swagger\KCClient\Model\Gui $gui gui
      *
      * @return $this
      */
@@ -778,7 +778,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Swagger\KCClient\Model\Address
      */
     public function getBillingAddress()
     {
@@ -788,7 +788,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Swagger\Client\Model\Address $billing_address billing_address
+     * @param \Swagger\KCClient\Model\Address $billing_address billing_address
      *
      * @return $this
      */
@@ -802,7 +802,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \Swagger\KCClient\Model\Address
      */
     public function getShippingAddress()
     {
@@ -812,7 +812,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Swagger\Client\Model\Address $shipping_address shipping_address
+     * @param \Swagger\KCClient\Model\Address $shipping_address shipping_address
      *
      * @return $this
      */
@@ -884,7 +884,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Swagger\Client\Model\OrderLine[]
+     * @return \Swagger\KCClient\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -894,7 +894,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Swagger\Client\Model\OrderLine[] $order_lines An array containing list of line items that are part of this order. Maximum of 1000 line items could be processed in a single order.
+     * @param \Swagger\KCClient\Model\OrderLine[] $order_lines An array containing list of line items that are part of this order. Maximum of 1000 line items could be processed in a single order.
      *
      * @return $this
      */
@@ -908,7 +908,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets merchant_urls
      *
-     * @return \Swagger\Client\Model\MerchantUrls
+     * @return \Swagger\KCClient\Model\MerchantUrls
      */
     public function getMerchantUrls()
     {
@@ -918,7 +918,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets merchant_urls
      *
-     * @param \Swagger\Client\Model\MerchantUrls $merchant_urls merchant_urls
+     * @param \Swagger\KCClient\Model\MerchantUrls $merchant_urls merchant_urls
      *
      * @return $this
      */
@@ -1090,7 +1090,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets external_payment_methods
      *
-     * @return \Swagger\Client\Model\PaymentProvider[]
+     * @return \Swagger\KCClient\Model\PaymentProvider[]
      */
     public function getExternalPaymentMethods()
     {
@@ -1100,7 +1100,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets external_payment_methods
      *
-     * @param \Swagger\Client\Model\PaymentProvider[] $external_payment_methods List of external payment methods that will be displayed as part of payment methods in the checkout.
+     * @param \Swagger\KCClient\Model\PaymentProvider[] $external_payment_methods List of external payment methods that will be displayed as part of payment methods in the checkout.
      *
      * @return $this
      */
@@ -1114,7 +1114,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets external_checkouts
      *
-     * @return \Swagger\Client\Model\PaymentProvider[]
+     * @return \Swagger\KCClient\Model\PaymentProvider[]
      */
     public function getExternalCheckouts()
     {
@@ -1124,7 +1124,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets external_checkouts
      *
-     * @param \Swagger\Client\Model\PaymentProvider[] $external_checkouts List of external checkouts that will be displayed as part of payment methods in the checkout.
+     * @param \Swagger\KCClient\Model\PaymentProvider[] $external_checkouts List of external checkouts that will be displayed as part of payment methods in the checkout.
      *
      * @return $this
      */
@@ -1162,7 +1162,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_options
      *
-     * @return \Swagger\Client\Model\ShippingOption[]
+     * @return \Swagger\KCClient\Model\ShippingOption[]
      */
     public function getShippingOptions()
     {
@@ -1172,7 +1172,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_options
      *
-     * @param \Swagger\Client\Model\ShippingOption[] $shipping_options A list of shipping options available for this order.
+     * @param \Swagger\KCClient\Model\ShippingOption[] $shipping_options A list of shipping options available for this order.
      *
      * @return $this
      */
@@ -1217,7 +1217,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets merchant_requested
      *
-     * @return \Swagger\Client\Model\MerchantRequested
+     * @return \Swagger\KCClient\Model\MerchantRequested
      */
     public function getMerchantRequested()
     {
@@ -1227,7 +1227,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets merchant_requested
      *
-     * @param \Swagger\Client\Model\MerchantRequested $merchant_requested merchant_requested
+     * @param \Swagger\KCClient\Model\MerchantRequested $merchant_requested merchant_requested
      *
      * @return $this
      */
@@ -1241,7 +1241,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets selected_shipping_option
      *
-     * @return \Swagger\Client\Model\ShippingOption
+     * @return \Swagger\KCClient\Model\ShippingOption
      */
     public function getSelectedShippingOption()
     {
@@ -1251,7 +1251,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets selected_shipping_option
      *
-     * @param \Swagger\Client\Model\ShippingOption $selected_shipping_option selected_shipping_option
+     * @param \Swagger\KCClient\Model\ShippingOption $selected_shipping_option selected_shipping_option
      *
      * @return $this
      */

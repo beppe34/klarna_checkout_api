@@ -1,4 +1,4 @@
-# Swagger\Client\OrderApi
+# Swagger\KCClient\OrderApi
 
 All URIs are relative to *https://api.klarna.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **createOrderMerchant**
-> \Swagger\Client\Model\Order createOrderMerchant($body)
+> \Swagger\KCClient\Model\Order createOrderMerchant($body)
 
 Create a new order
 
@@ -21,12 +21,12 @@ To create a new order simply provide a JSON object with the applicable propertie
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderApi(
+$apiInstance = new Swagger\KCClient\Api\OrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Order(); // \Swagger\Client\Model\Order | 
+$body = new \Swagger\KCClient\Model\Order(); // \Swagger\KCClient\Model\Order | 
 
 try {
     $result = $apiInstance->createOrderMerchant($body);
@@ -41,11 +41,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Order**](../Model/Order.md)|  | [optional]
+ **body** | [**\Swagger\KCClient\Model\Order**](../Model/Order.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\Swagger\KCClient\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **readOrderMerchant**
-> \Swagger\Client\Model\Order readOrderMerchant($order_id)
+> \Swagger\KCClient\Model\Order readOrderMerchant($order_id)
 
 Retrieve an order
 
@@ -70,7 +70,7 @@ Retrieve the full checkout order resource content
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderApi(
+$apiInstance = new Swagger\KCClient\Api\OrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\Swagger\KCClient\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOrderMerchant**
-> \Swagger\Client\Model\Order updateOrderMerchant($order_id, $body)
+> \Swagger\KCClient\Model\Order updateOrderMerchant($order_id, $body)
 
 Update an order
 
@@ -119,13 +119,13 @@ To update an order simply provide a JSON object with the properties you want to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderApi(
+$apiInstance = new Swagger\KCClient\Api\OrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $order_id = "order_id_example"; // string | 
-$body = new \Swagger\Client\Model\Order(); // \Swagger\Client\Model\Order | 
+$body = new \Swagger\KCClient\Model\Order(); // \Swagger\KCClient\Model\Order | 
 
 try {
     $result = $apiInstance->updateOrderMerchant($order_id, $body);
@@ -141,11 +141,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**|  |
- **body** | [**\Swagger\Client\Model\Order**](../Model/Order.md)|  | [optional]
+ **body** | [**\Swagger\KCClient\Model\Order**](../Model/Order.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\Swagger\KCClient\Model\Order**](../Model/Order.md)
 
 ### Authorization
 

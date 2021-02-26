@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * ShippingAttributes Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ShippingAttributes implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'weight' => 'int',
-        'dimensions' => '\Swagger\Client\Model\Dimensions',
+        'dimensions' => '\Swagger\KCClient\Model\Dimensions',
         'tags' => 'string[]'
     ];
 
@@ -243,7 +243,7 @@ class ShippingAttributes implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions
      *
-     * @return \Swagger\Client\Model\Dimensions
+     * @return \Swagger\KCClient\Model\Dimensions
      */
     public function getDimensions()
     {
@@ -253,7 +253,7 @@ class ShippingAttributes implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions
      *
-     * @param \Swagger\Client\Model\Dimensions $dimensions dimensions
+     * @param \Swagger\KCClient\Model\Dimensions $dimensions dimensions
      *
      * @return $this
      */

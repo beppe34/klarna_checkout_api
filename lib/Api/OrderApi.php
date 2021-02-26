@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Swagger\KCClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Swagger\KCClient\ApiException;
+use Swagger\KCClient\Configuration;
+use Swagger\KCClient\HeaderSelector;
+use Swagger\KCClient\ObjectSerializer;
 
 /**
  * OrderApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,11 +92,11 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Swagger\Client\Model\Order $body body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\KCClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \Swagger\KCClient\Model\Order
      */
     public function createOrderMerchant($body = null)
     {
@@ -109,15 +109,15 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\KCClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\KCClient\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function createOrderMerchantWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\Order';
+        $returnType = '\Swagger\KCClient\Model\Order';
         $request = $this->createOrderMerchantRequest($body);
 
         try {
@@ -169,7 +169,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\Swagger\KCClient\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,14 +204,14 @@ class OrderApi
      *
      * Create a new order
      *
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createOrderMerchantAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Swagger\Client\Model\Order';
+        $returnType = '\Swagger\KCClient\Model\Order';
         $request = $this->createOrderMerchantRequest($body);
 
         return $this->client
@@ -254,7 +254,7 @@ class OrderApi
     /**
      * Create request for operation 'createOrderMerchant'
      *
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -352,9 +352,9 @@ class OrderApi
      *
      * @param  string $order_id order_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\KCClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \Swagger\KCClient\Model\Order
      */
     public function readOrderMerchant($order_id)
     {
@@ -369,13 +369,13 @@ class OrderApi
      *
      * @param  string $order_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\KCClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\KCClient\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function readOrderMerchantWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\Order';
+        $returnType = '\Swagger\KCClient\Model\Order';
         $request = $this->readOrderMerchantRequest($order_id);
 
         try {
@@ -427,7 +427,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\Swagger\KCClient\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -469,7 +469,7 @@ class OrderApi
      */
     public function readOrderMerchantAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\Order';
+        $returnType = '\Swagger\KCClient\Model\Order';
         $request = $this->readOrderMerchantRequest($order_id);
 
         return $this->client
@@ -620,11 +620,11 @@ class OrderApi
      * Update an order
      *
      * @param  string $order_id order_id (required)
-     * @param  \Swagger\Client\Model\Order $body body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\KCClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \Swagger\KCClient\Model\Order
      */
     public function updateOrderMerchant($order_id, $body = null)
     {
@@ -638,15 +638,15 @@ class OrderApi
      * Update an order
      *
      * @param  string $order_id (required)
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Swagger\KCClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\KCClient\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateOrderMerchantWithHttpInfo($order_id, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\Order';
+        $returnType = '\Swagger\KCClient\Model\Order';
         $request = $this->updateOrderMerchantRequest($order_id, $body);
 
         try {
@@ -698,7 +698,7 @@ class OrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\Swagger\KCClient\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -714,7 +714,7 @@ class OrderApi
      * Update an order
      *
      * @param  string $order_id (required)
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -735,14 +735,14 @@ class OrderApi
      * Update an order
      *
      * @param  string $order_id (required)
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateOrderMerchantAsyncWithHttpInfo($order_id, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\Order';
+        $returnType = '\Swagger\KCClient\Model\Order';
         $request = $this->updateOrderMerchantRequest($order_id, $body);
 
         return $this->client
@@ -786,7 +786,7 @@ class OrderApi
      * Create request for operation 'updateOrderMerchant'
      *
      * @param  string $order_id (required)
-     * @param  \Swagger\Client\Model\Order $body (optional)
+     * @param  \Swagger\KCClient\Model\Order $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

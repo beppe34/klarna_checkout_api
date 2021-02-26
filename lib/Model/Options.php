@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Swagger\KCClient\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Swagger\KCClient\ObjectSerializer;
 
 /**
  * Options Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Swagger\KCClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,14 +70,14 @@ class Options implements ModelInterface, ArrayAccess
         'date_of_birth_mandatory' => 'bool',
         'shipping_details' => 'string',
         'title_mandatory' => 'bool',
-        'additional_checkbox' => '\Swagger\Client\Model\Checkbox',
+        'additional_checkbox' => '\Swagger\KCClient\Model\Checkbox',
         'national_identification_number_mandatory' => 'bool',
         'additional_merchant_terms' => 'string',
         'phone_mandatory' => 'bool',
         'radius_border' => 'string',
         'allowed_customer_types' => 'string[]',
         'show_subtotal_detail' => 'bool',
-        'additional_checkboxes' => '\Swagger\Client\Model\CheckboxV2[]',
+        'additional_checkboxes' => '\Swagger\KCClient\Model\CheckboxV2[]',
         'verify_national_identification_number' => 'bool',
         'show_vat_registration_number_field' => 'bool'
     ];
@@ -714,7 +714,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Gets additional_checkbox
      *
-     * @return \Swagger\Client\Model\Checkbox
+     * @return \Swagger\KCClient\Model\Checkbox
      */
     public function getAdditionalCheckbox()
     {
@@ -724,7 +724,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Sets additional_checkbox
      *
-     * @param \Swagger\Client\Model\Checkbox $additional_checkbox additional_checkbox
+     * @param \Swagger\KCClient\Model\Checkbox $additional_checkbox additional_checkbox
      *
      * @return $this
      */
@@ -882,7 +882,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Gets additional_checkboxes
      *
-     * @return \Swagger\Client\Model\CheckboxV2[]
+     * @return \Swagger\KCClient\Model\CheckboxV2[]
      */
     public function getAdditionalCheckboxes()
     {
@@ -892,7 +892,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Sets additional_checkboxes
      *
-     * @param \Swagger\Client\Model\CheckboxV2[] $additional_checkboxes additional_checkboxes
+     * @param \Swagger\KCClient\Model\CheckboxV2[] $additional_checkboxes additional_checkboxes
      *
      * @return $this
      */
